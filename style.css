@@ -279,6 +279,12 @@ hr{
   font-size: 14px;
   margin-left: 3px;
 }
+.text-field__label--bold {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 3px;
+}
 
 .text-field__label-sub-note {
   font-size: 9px;
@@ -304,16 +310,29 @@ hr{
   padding: 5px;
   width: 100%;
   height:80px;
+  resize: none;
 }
 .text-area__input--max{
   height:220px; 
+  resize:none;
 }
 
+.text-area__table{
+  border:none;
+  width: 100%;
+  height:90px;
+  resize: none;
+}
 .text-header-orange{
   color: #e7602c;
   font-size: 17px;
   font-weight: 600;
 
+}
+.text-table-orange{
+  color: #e7602c;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .text--footer-page{
@@ -322,6 +341,10 @@ hr{
   font-weight: 600;
 }
 
+.text-light-bold{
+font-weight: 500;
+font-size: 13px;
+}
 .checkbox {
   margin-bottom: 8px;
   margin-right: 16px;
@@ -360,4 +383,46 @@ hr{
 .page-division{
   margin-top: 15px;
   margin-bottom: 40px;
+}
+
+.table-wrapper{
+  overflow-x:auto;
+}
+.table-capacity{
+  border: 2px solid #e7602c;
+  border-collapse: collapse;
+  padding:5px;
+  margin-bottom: 10px;  
+}
+.table-capacity td{
+  border: 2px solid #e7602c;
+  text-align: left;
+  border-collapse: collapse;
+  padding:5px;
+  font-weight: 400;
+  font-size: 12px;
+  padding-bottom: 0px;  
+}
+.table-capacity td:nth-child(1){
+  padding-bottom:10px;
+}
+
+.table-capacity th{
+  border: 2px solid white;
+  text-align: left;
+  border-collapse: collapse;
+  padding:5px; 
+  color:white;
+  font-weight: 400;
+  font-size: 10px;
+  background-color: #e7602c;
+  width:30%;
+  vertical-align: top;
+}
+.table-capacity th:nth-child(1){
+  border-left:none;
+  width:10%;
+}
+.table-capacity th:nth-child(4){
+  border-right: none;
 }
