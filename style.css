@@ -262,6 +262,11 @@ hr{
   width: 100%;
 }
 
+.div--footer{
+  margin-top:25px;
+  margin-bottom: 50px;
+}
+
 .intro-paragraph {
   margin-bottom: 20px;
 }
