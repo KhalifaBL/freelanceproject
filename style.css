@@ -270,6 +270,9 @@ hr{
   margin-bottom: 8px;
   margin-right: 16px;
 }
+.text-field--max{
+  
+}
 .text-field:last-child {
   margin-right: 0;
 }
@@ -294,6 +297,11 @@ hr{
   font-size: 12px;
 
 }
+.text-field__link-note{
+  text-decoration: underline;
+  color:blue;
+  font-weight: 400;
+}
 .text-field__label-spaced{
   margin-left: 25px;
   font-size: 13px !important; 
@@ -304,6 +312,13 @@ hr{
   border: solid 2px #e7602c;
   padding: 5px;
   width: 100%;
+}
+.text-field__input--max {
+  border: solid 2px #e7602c;
+  padding: 5px;
+  width: 100%;
+  height:120px; 
+
 }
 .text-area__input {
   border: solid 2px #e7602c;
@@ -376,6 +391,9 @@ font-size: 13px;
   margin-bottom: 8px;
   margin-right: 16px;
 }
+.col--alignement{
+  margin-top: 16px;
+}
 
 .col--ahrr-number {
   width: 140px;
@@ -383,9 +401,6 @@ font-size: 13px;
 
 .col--physiologist {
   width: 200px;
-}
-.col--client-name{
-  width:100%;
 }
 .col--text-area{
   width:100%;
@@ -414,6 +429,7 @@ font-size: 13px;
 
 .table-wrapper{
   overflow-x:auto;
+  
 }
 .table-capacity{
   border: 2px solid #e7602c;
@@ -450,7 +466,10 @@ font-size: 13px;
   border-left:none;
   width:10%;
 }
-.table-capacity th:nth-child(4),.table-steps th:nth-child(3){
+.table-capacity th:nth-child(4),
+.table-steps th:nth-child(3),
+.table-services th:nth-child(6),
+.table-case th:nth-child(6){
   border-right: none;
 }
 .table-steps{
@@ -615,4 +634,32 @@ border-right-color:#e7602c;
   background-color:#e7602c;
   color:white;
   }
+  .table-rational{
+    border: 2px solid #e7602c;
+    border-collapse: collapse;
+    padding:5px;
+    margin-bottom: 10px;  
+  }
   
+  .table-rational td{
+    border: 2px solid #e7602c;
+    text-align: left;
+    border-collapse: collapse;
+    padding:5px;
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 0px;  
+    height:60px;
+  }
+  
+  .table-rational th{
+    text-align: left;
+    border-collapse: collapse;
+    padding:5px; 
+    color:white;
+    font-weight: 400;
+    font-size: 10px;
+    background-color: #e7602c;
+    width:750px;
+    vertical-align: top;
+  }
