@@ -94,6 +94,12 @@ hr{
 .row-top-margin-x{
   margin-top:20px;
 }
+.row-top-margin-m{
+  margin-top:14px;
+}
+.row-bottom-margin{
+  margin-bottom:5px;
+}
 
 @media (min-width: 600px) {
   .row {
@@ -284,6 +290,12 @@ hr{
   margin-top:50px;
 
 }
+.div-date-input-margin{
+  margin-top: -8px;
+}
+.div-date-input-padding{
+  padding-right:0;
+}
 .footer-extra-space{
   margin-top:60px;
 }
@@ -429,6 +441,11 @@ hr{
 font-weight: 500;
 font-size: 11px;
 height:0px;
+}
+.text-date-margin{
+  margin-top:0px;
+  margin-left: 50px;
+  height:0px;
 }
 .text-med-bold{
   font-weight: 600;
