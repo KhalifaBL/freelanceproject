@@ -69,7 +69,9 @@ textarea {
 }
 
 hr{
-  border: 1px solid #e7602c;
+  border: 5px solid #525659;
+  box-shadow: 2px 3px 10px -1px rgba(0,0,0,0.25);
+
 
 }
 
@@ -85,6 +87,12 @@ hr{
 
 .row {
   display: block;
+}
+.row-top-margin{
+  margin-top:5px;
+}
+.row-top-margin-x{
+  margin-top:20px;
 }
 
 @media (min-width: 600px) {
@@ -229,6 +237,11 @@ hr{
   padding: 12px 15px;
   position: relative;
 }
+.secondary-header{
+  margin-top:-15px;
+  margin-bottom: 60px;
+
+}
 
 @media (min-width: 600px) {
   .main-header {
@@ -264,8 +277,18 @@ hr{
 }
 
 .div--footer{
+  margin-top:30px;
+  margin-bottom: 15px;
+}
+.div-stamp{
+  margin-top:50px;
+
+}
+.footer-extra-space{
+  margin-top:60px;
+}
+.div-footer-page{
   margin-top:25px;
-  margin-bottom: 50px;
 }
 
 .intro-paragraph {
@@ -303,6 +326,10 @@ hr{
   font-size: 12px;
 
 }
+.text-field__label-note-less-margin{
+  margin-left: 0px;
+  font-size: 9px;
+}
 .text-field__link-note{
   text-decoration: underline;
   color:blue;
@@ -325,6 +352,12 @@ hr{
   width: 100%;
   height:120px; 
 
+}
+.text-field__input--mid{
+  border: solid 2px #e7602c;
+  padding: 5px;
+  width: 100%;
+  height:70px; 
 }
 .text-area__input {
   border: solid 2px #e7602c;
@@ -370,10 +403,19 @@ hr{
   font-weight: 600;
 
 }
+.text-footer-page{
+  color: #e7602c;
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 500;
+}
+.text-footer-small{
+  font-size: 11px;
+}
 .text-table-orange{
   color: #e7602c;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 .text--footer-page{
@@ -385,7 +427,13 @@ hr{
 
 .text-light-bold{
 font-weight: 500;
-font-size: 13px;
+font-size: 11px;
+height:0px;
+}
+.text-med-bold{
+  font-weight: 600;
+  font-size: 14px;
+
 }
 .text-client-goal{
   margin-left: 10px;
@@ -394,6 +442,13 @@ font-size: 13px;
   text-align:right;
 
 }
+
+.span-orange-border{
+  border-style: solid;
+  border-color: #e7602c;
+  border-width: 5px;
+}
+
 /* Checkbox Styling */
 
 .container {
@@ -421,7 +476,7 @@ font-size: 13px;
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 0;
+  bottom:0;
   left: 0;
   height: 25px;
   width: 25px;
@@ -518,7 +573,7 @@ font-size: 13px;
 }
 .page-division{
   margin-top: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* Tables Styling */
@@ -532,6 +587,7 @@ font-size: 13px;
   border-collapse: collapse;
   padding:5px;
   margin-bottom: 10px;  
+  min-width: 560px;
 }
 .table-capacity td{
   border: 2px solid #e7602c;
@@ -539,8 +595,9 @@ font-size: 13px;
   border-collapse: collapse;
   padding:5px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   padding-bottom: 0px;  
+  vertical-align: top;
 }
 .table-capacity td:nth-child(1){
   padding-bottom:10px;
@@ -551,6 +608,8 @@ font-size: 13px;
   text-align: left;
   border-collapse: collapse;
   padding:5px; 
+  padding-top: 0px;
+  padding-bottom: 2px;
   color:white;
   font-weight: 400;
   font-size: 10px;
@@ -573,6 +632,8 @@ font-size: 13px;
   border-collapse: collapse;
   padding:5px;
   margin-bottom: 10px;  
+  min-width: 560px;
+
 }
 
 .table-steps td{
@@ -607,6 +668,8 @@ font-size: 13px;
   border-collapse: collapse;
   padding:5px;
   margin-bottom: 10px;  
+  min-width: 560px;
+
 }
 .table-services td{
   border: 2px solid #e7602c;
@@ -627,13 +690,13 @@ font-size: 13px;
   font-weight: 400;
   font-size: 9px;
   background-color: #e7602c;
-  height: 50px;
+  height: 30px;
   width:33%;
   vertical-align: top;
 }
 .table-services th:nth-child(1){
   border-left:none;
-  width:35%;
+  width:30%;
 }
 .table-services th:nth-child(2){
   width:10%;
@@ -674,6 +737,8 @@ font-size: 13px;
   border-collapse: collapse;
   padding:5px;
   margin-bottom: 10px;  
+  min-width: 560px;
+
 }
 .table-case td{
   border: 2px solid #e7602c;
@@ -694,13 +759,13 @@ font-size: 13px;
   font-weight: 400;
   font-size: 9px;
   background-color: #e7602c;
-  height: 50px;
+  height: 30px;
   width:33%;
   vertical-align: top;
 }
 .table-case th:nth-child(1){
   border-left:none;
-  width:35%;
+  width:29%;
 }
 .table-case th:nth-child(2){
   width:10%;
@@ -717,16 +782,29 @@ font-size: 13px;
 .table-case th:nth-child(6){
   width:10%;
 }
+.table-case tr:nth-child(4) td:nth-child(1),
+.table-case tr:nth-child(4) td:nth-child(2),
 .table-case tr:nth-child(3) td:nth-child(1),
-.table-case tr:nth-child(3) td:nth-child(2){
+.table-case tr:nth-child(3) td:nth-child(2),
+.table-case tr:nth-child(3) td:nth-child(3),
+.table-case tr:nth-child(3) td:nth-child(4),
+.table-case tr:nth-child(3) td:nth-child(5){
   border-left-color: white;
   border-bottom-color: white;
   border-right-color: white;
 }
-.table-case tr:nth-child(3) td:nth-child(2){
-border-right-color:#e7602c;
+
+.table-case tr:nth-child(3) td:nth-child(6){
+  border-left-color: white;
+  border-right-color: white;
+  border-bottom-color: #e7602c;
+
 }
-.table-case tr:nth-child(3) td:nth-child(3){
+.table-case tr:nth-child(4) td:nth-child(6){
+  border-top-color:#e7602c !important;
+  color:white;
+  }
+.table-case tr:nth-child(4) td:nth-child(3){
   background-color:#e7602c;
   color:white;
   }
@@ -759,3 +837,138 @@ border-right-color:#e7602c;
     width:750px;
     vertical-align: top;
   }
+
+  
+/******* Styling Header inputs **********/
+
+
+.field{
+  --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+}
+
+.field__input{ 
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.field__input:focus::-webkit-input-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+}
+
+.field__input:focus::-moz-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+  opacity: 1;
+}
+
+/* a-field */
+
+.a-field{
+  --uiFieldHeight: var(--fieldHeight, 40px);  
+  --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+  --uiFieldBorderColor: var(--fieldBorderColor);
+
+  --uiFieldFontSize: var(--fieldFontSize, 1em);
+  --uiFieldHintFontSize: var(--fieldHintFontSize, 1em);
+
+  --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
+  --uiFieldPaddingBottom: var(--fieldPaddingBottom, 15px);
+  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px);   
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding-top: 1em;  
+}
+.a-field__input{ 
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.a-field__input:focus{
+  outline: none;
+}
+
+.a-field .a-field__input{
+  height: var(--uiFieldHeight);
+  padding: 0 var(--uiFieldPaddingRight) 0 var(--uiFieldPaddingLeft);
+  border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColor);  
+}
+
+.a-field .a-field__input::-webkit-input-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.a-field .a-field__input::-moz-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.a-field .a-field__input:not(:placeholder-shown) ~ .a-field__label-wrap .a-field__label{
+  opacity: 0;
+  bottom: var(--uiFieldPaddingBottom);
+}
+
+.a-field .a-field__input:focus::-webkit-input-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.a-field .a-field__input:focus::-moz-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.a-field .a-field__label-wrap{
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--uiFieldHeight);	
+
+  pointer-events: none;
+  cursor: text;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.a-field .a-field__label{
+  position: absolute;
+  left: var(--uiFieldPaddingLeft);
+  bottom: calc(50% - .5em);
+
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  pointer-events: none;
+  transition: bottom .2s cubic-bezier(0.9,-0.15, 0.1, 1.15), opacity .2s ease-out;
+  will-change: bottom, opacity;
+}
+
+.a-field .a-field__input:focus ~ .a-field__label-wrap .a-field__label{
+  opacity: 1;
+  bottom: var(--uiFieldHeight);
+}
+
+/* a-field_a1 */
+
+.a-field_a1 .a-field__input{
+  transition: border-color .4s ease-out;
+  will-change: border-color;
+}
+
+.a-field_a1 .a-field__input:focus{
+  border-color: var(--fieldBorderColorActive);
+}
+
+.field{
+  --fieldBorderColor: #D1C4E9;
+  --fieldBorderColorActive: #e7602c;
+}
